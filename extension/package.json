@@ -1,8 +1,9 @@
 {
   "name": "dev-browser-extension",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
+    "prepare": "wxt prepare",
     "dev": "wxt",
     "dev:firefox": "wxt --browser firefox",
     "build": "wxt build",
@@ -10,12 +11,13 @@
     "zip": "wxt zip",
     "zip:firefox": "wxt zip --browser firefox",
     "test": "vitest",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "reinstall": "rm -rf node_modules bun.lock && bun install"
   },
   "devDependencies": {
-    "@types/chrome": "^0.1.32",
-    "typescript": "^5.0.0",
-    "vitest": "^3.0.0",
-    "wxt": "^0.20.0"
+    "@types/chrome": "^0.1.36",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18",
+    "wxt": "^0.20.17"
   }
 }

@@ -1,0 +1,3 @@
+[test]
+# Only run tests under src/ from repo root. Extension tests use extension/package.json.
+root = "./src"

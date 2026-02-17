@@ -66,6 +66,8 @@ The Chrome extension allows Dev Browser to control your existing Chrome browser 
 
 When active, Claude can control your existing Chrome tabs with all your logged-in sessions, cookies, and extensions intact.
 
+**For secure/authenticated pages:** Use the extension mode when you need to interact with pages that require login. Dev Browser will access your existing Chrome session, preserving all authentication state without needing to re-login.
+
 ## Permissions
 
 To skip permission prompts, add to `~/.claude/settings.json`:
