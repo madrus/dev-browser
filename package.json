@@ -6,9 +6,9 @@
     "start-server": "bun run scripts/start-server.ts",
     "start-extension": "bun run scripts/start-relay.ts",
     "dev": "bun --watch run src/index.ts",
-    "test": "bun test ./src",
-    "test:watch": "bun test --watch ./src",
-    "test:extension": "cd extension && bun run test:run",
+    "test": "bun test && bun test:extension",
+    "test:watch": "bun test --watch",
+    "test:extension": "cd extension && bun test:run",
     "reinstall": "rm -rf node_modules bun.lock && bun install"
   },
   "dependencies": {
