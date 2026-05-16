@@ -109,6 +109,12 @@ _See [dev-browser-eval](https://github.com/SawyerHood/dev-browser-eval) for meth
 | [Playwright Skill](https://github.com/lackeyjb/playwright-skill) | Full scripts that run end-to-end                  | Fast but fragile; scripts start fresh every time       |
 | **Dev Browser**                                                  | Stateful server + agentic script execution        | Best of both: persistent state with flexible execution |
 
+## Claude Code Marketplace Plugin
+
+This repository is the upstream source for the `dev-browser@dev-browser-marketplace` Claude Code plugin. If you use the agent-agnostic skill distribution (via `~/.agents/skills/dev-browser/`), do **not** install the marketplace plugin - the custom skill shadows the plugin, making it redundant. The agent-agnostic wrapper at `~/.agents/skills/dev-browser/` adapts paths and startup for cross-agent compatibility while delegating to this project for the actual server, client, and skill content.
+
+This project is a clone with the `upstream` remote pointing to the original repository. Use `git fetch upstream` to track upstream changes without the plugin.
+
 ## License
 
 MIT
