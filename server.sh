@@ -19,9 +19,9 @@ done
 # Only install dependencies if node_modules doesn't exist
 if [ ! -d "node_modules" ]; then
     echo "Installing dependencies..."
-    bun install
+    pnpm install
 fi
 
 echo "Starting dev-browser server..."
 export HEADLESS=$HEADLESS
-bun run scripts/start-server.ts
+npx tsx scripts/start-server.ts
